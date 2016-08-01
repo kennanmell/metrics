@@ -41,4 +41,4 @@ g.theme = {
     :background_colors => 'white'
 }
 
-g.write('build_times.png')
+g.write('output/build_times.png')

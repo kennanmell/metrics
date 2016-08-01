@@ -57,4 +57,4 @@ g.theme = {
 g.font = '/Library/Fonts/Verdana.ttf'
 g.data("Pull Request", coverage_data.map {|data| data[1]})
 g.data("Other", coverage_data.map {|data| data[2]})
-g.write "daily-builds.png"
+g.write "output/daily-builds.png"

@@ -30,4 +30,4 @@ g.theme = {
     :font_color => 'black',
     :background_colors => 'white'
 }
-g.write('warning_count.png')
+g.write('output/warning_count.png')

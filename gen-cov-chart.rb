@@ -19,4 +19,4 @@ g.theme = {
 g.font = '/Library/Fonts/Verdana.ttf'
 g.data("Swift", coverage_data.map {|data| data[1] - data[2]})
 g.data("Obj-C", coverage_data.map {|data| data[2]})
-g.write "code_coverage.png"
+g.write "output/code_coverage.png"

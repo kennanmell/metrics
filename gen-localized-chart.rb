@@ -34,4 +34,4 @@ g.theme = {
     :background_colors => 'white'
 }
 
-g.write('localization_data.png')
+g.write('output/localization_data.png')

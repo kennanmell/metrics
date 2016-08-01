@@ -39,4 +39,4 @@ g.theme = {
 g.font = '/Library/Fonts/Verdana.ttf'
 g.data("Swift", coverage_data.map {|data| data[1]})
 g.data("Objective-C", coverage_data.map {|data| data[2]})
-g.write "lines_of_code.png"
+g.write "output/lines_of_code.png"
