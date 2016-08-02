@@ -1,5 +1,5 @@
 # metrics
-Finds and displays build metrics in the RealSelf build server. Running `metrics.rb` will generate/update all 6 .png images.
+Finds and displays build metrics in the build server. Running `metrics.rb` will generate/update all 6 .png images.
 
 ## To-Do
 1. After fix for missing coverage metrics, test `gen-lines-chart.rb` and make/test `gen-cov-chart.rb`
