@@ -32,7 +32,7 @@ g = Gruff::Line.new
 g.title = 'Build Times'
 g.labels = coverage_data.each_with_index.map {|data, i| [ i, data[0] ]}.to_h
 g.dot_style = :square
-g.data("time (min)", coverage_data.map {|data| data[1]})
+g.data("minutes (#{coverage_data[coverage_data.size - 1][1]})", coverage_data.map {|data| data[1]})
 g.x_axis_label = 'Pull Request'
 
 g.theme = {

@@ -1,15 +1,5 @@
 require 'gruff'
 require 'mongo'
-
-coverage_data = [
-  [ "2.4", 2187 + 46079, 697 + 31899 ],
-  [ "2.5", 2198 + 46186, 297 + 23172 ]
-]
-
-# To-Do: Fill in coverage data
-
-require 'gruff'
-require 'mongo'
 require_relative 'constants'
 
 # Script that generates a chart displaying number of builds per day by branch/PR.
@@ -55,6 +45,6 @@ g.theme = {
   :background_colors => 'white'
 }
 g.font = '/Library/Fonts/Verdana.ttf'
-g.data("Pull Request", coverage_data.map {|data| data[1]})
-g.data("Other", coverage_data.map {|data| data[2]})
+g.data("Pull Request (#{coverage_data[coverage_data.size - 1][1]})", coverage_data.map {|data| data[1]})
+g.data("Other (#{coverage_data[coverage_data.size - 1][2]})", coverage_data.map {|data| data[2]})
 g.write "output/daily-builds.png"

@@ -22,7 +22,7 @@ g = Gruff::Line.new
 g.title = 'Warnings'
 g.labels = coverage_data.each_with_index.map {|data, i| [ i, data[0] ]}.to_h
 g.dot_style = :square
-g.data("# warnings", coverage_data.map {|data| data[1]})
+g.data("# warnings (#{coverage_data[coverage_data.size - 1][1]})", coverage_data.map {|data| data[1]})
 g.x_axis_label = ''
 
 g.theme = {
