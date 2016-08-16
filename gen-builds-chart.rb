@@ -47,4 +47,7 @@ g.theme = {
 g.font = '/Library/Fonts/Verdana.ttf'
 g.data("Pull Request (#{coverage_data[coverage_data.size - 1][1]})", coverage_data.map {|data| data[1]})
 g.data("Other (#{coverage_data[coverage_data.size - 1][2]})", coverage_data.map {|data| data[2]})
+g.x_axis_label = 'Date'
+g.y_axis_label = 'Number of Builds'
+g.y_axis_increment = 2
 g.write "output/daily-builds.png"

@@ -29,11 +29,14 @@ collection.find().sort(:start_time => -1).limit(LIMIT).map do |document|
 end
 
 g = Gruff::Line.new
+g.minimum_value = 0
+g.maximum_value = 10
 g.title = 'Build Times'
 g.labels = coverage_data.each_with_index.map {|data, i| [ i, data[0] ]}.to_h
 g.dot_style = :square
 g.data("minutes (#{coverage_data[coverage_data.size - 1][1]})", coverage_data.map {|data| data[1]})
 g.x_axis_label = 'Pull Request'
+g.y_axis_label = 'Time (mins)'
 
 g.theme = {
     :colors => ['#38c0df'],
