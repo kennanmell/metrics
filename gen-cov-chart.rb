@@ -32,7 +32,7 @@ g.maximum_value = 100
 g.title = "Coverage"
 g.labels = coverage_data.each_with_index.map {|data, i| [ i, data[0] ]}.to_h
 g.theme = {
-    :colors => ['#12a702', '#aedaa9'],
+    :colors => ['#822F92'],
     :font_color => 'black',
     :background_colors => 'white'
 }

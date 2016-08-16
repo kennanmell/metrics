@@ -26,7 +26,7 @@ g = Gruff::StackedBar.new
 g.title = "Lines of Code"
 g.labels = coverage_data.each_with_index.map {|data, i| [ i, data[0] ]}.to_h
 g.theme = {
-  :colors => ['#12a702', '#aedaa9'],
+  :colors => ['#C17B3A', '#C1BA3A'],
   :font_color => 'black',
   :background_colors => 'white'
 }
