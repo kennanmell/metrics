@@ -15,7 +15,7 @@ collection.find().sort(:start_time => -1).limit(LIMIT).map do |document|
     pull_number = document['pull_request'].to_i
     if pull_number != 0 && !keys.include?(pull_number)
         keys.push(pull_number)
-        coverage_data.insert(0, [pull_number, document['metrics']['strings'], document['metrics']['descriptions'], document['metrics']['words']])
+        coverage_data.insert(0, [pull_number, document['metrics']['localization']['strings'], document['metrics']['localization']['descriptions'], document['metrics']['localization']['words']])
     end
 end
 
